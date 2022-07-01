@@ -13,8 +13,14 @@ body {
 }
 
 @keyframes flipX {
-    from {transform: rotateX(-0.2turn);}
-    to{transform: rotateX(0);}
+    from {
+        opacity: 0;
+        transform: rotateX(-0.2turn);
+    }
+    to{
+        opacity: 1;
+        transform: rotateX(0);
+    }
 
 }
 
@@ -22,6 +28,7 @@ body {
     position: relative;
     font-size: 1.5rem;
     margin-top: 20px;
+    animation: fadeIn 1s;
     animation-timing-function: ease-in;
 }
 
@@ -43,23 +50,17 @@ body {
     animation: slideLeft 5s;
 }
 
-.css-abouttxt-1 {
-    animation: fadeIn 2s;
-}
-
-.css-abouttxt-2 {
-    animation: fadeIn 2s;
-}
-
-.css-abouttxt-3 {
-    animation: fadeIn 2s;
-}
-
 
 
 @keyframes slideLeft {
-    from {left: 150%;}
-    to{left: 0%;}
+    from {
+        opacity: 0;
+        left: 150%;
+    }
+    to{
+        opacity: 1;
+        left: 0%;
+    }
 }
 
 
