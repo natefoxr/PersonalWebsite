@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif !important;
+    background: linear-gradient(to right, rgba(48, 207, 208, 0.5), rgba(51, 8, 103, 0.5))
+}
+
+#about-flipInX {
+    font-size: 4rem;
+    margin-top: 20px;
+}
+
+#aboutMeDetails p {
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+#aboutMeDetails h2 {
+    margin-top: 20px;
+}
