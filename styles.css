@@ -8,13 +8,58 @@ body {
 #about-flipInX {
     font-size: 4rem;
     margin-top: 20px;
+    position: relative;
+    animation: flipX 2s 1;
+}
+
+@keyframes flipX {
+    from {transform: rotateX(-0.2turn);}
+    to{transform: rotateX(0);}
+
 }
 
 #aboutMeDetails p {
+    position: relative;
     font-size: 1.5rem;
     margin-top: 20px;
+    animation-timing-function: ease-in;
 }
 
 #aboutMeDetails h2 {
+    position: relative;
     margin-top: 20px;
+    animation-timing-function: cubic-bezier(.51,.92,.24,1.15);
 }
+
+.about-me {
+    animation: slideLeft 3s;
+}
+
+.education {
+    animation: slideLeft 4s;
+}
+
+.looking-ahead {
+    animation: slideLeft 5s;
+}
+
+.css-abouttxt-1 {
+    animation: fadeIn 2s;
+}
+
+.css-abouttxt-2 {
+    animation: fadeIn 2s;
+}
+
+.css-abouttxt-3 {
+    animation: fadeIn 2s;
+}
+
+
+
+@keyframes slideLeft {
+    from {left: 150%;}
+    to{left: 0%;}
+}
+
+
