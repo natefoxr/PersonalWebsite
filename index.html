@@ -10,7 +10,7 @@
 </head>
 <body>
     
-    <nav class="navbar navbar-expand-lg css-navbar">
+    <nav class="navbar navbar-expand-lg nav-animate">
         <div class="container-fluid">
             <a class="navbar-brand text-light mr-auto d-lg-none" href="./">Nathan Moudakis</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,17 +20,125 @@
             </button>
             <div class="collapse navbar-collapse justify-content-center my-3" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link text-light fs-4 px-3" href="./">Home</a>
-                    <a class="nav-link text-light fs-4 px-3 changelink-a1" href="./content/about">About Me</a>
-                    <a class="nav-link text-light fs-4 px-3 changelink-m1" href="./content/myCode">My Code</a>
-                    <a class="nav-link text-light fs-4 px-3 changelink-r1" href="./content/resume">Resume</a>
+                    <a class="nav-link text-light fs-4 px-3 text-decoration-underline hoverh changelink-i1" href="./">Home</a>
+                    <a class="nav-link text-light fs-4 px-3 text-decoration-underline hovera changelink-a1" href="./content/about">About Me</a>
+                    <a class="nav-link text-light fs-4 px-3 text-decoration-underline hoverm changelink-m1" href="./content/myCode">My Code</a>
+                    <a class="nav-link text-light fs-4 px-3 text-decoration-underline hoverr changelink-r1" href="./content/resume">Resume</a>
                 </div>
             </div>
         </div>
     </nav>
 
+    <div id="home" class="container">
+        <div class="text-center" id="photo-enter">
+            <img src="./media/images/Headshot.jpg" alt="Nathan Moudakis Portrait" class="img-thumbnail lg-w-25 w-50 mb-5">
+        </div>
+        <h1 class="text-center fw-bold sm letter-spin">
+            <span style="--i:1">N</span>
+            <span style="--i:2">a</span>
+            <span style="--i:3">t</span>
+            <span style="--i:4">e</span>
+            <br>
+            <span style="--i:5">M</span>
+            <span style="--i:6">o</span>
+            <span style="--i:7">u</span>
+            <span style="--i:8">d</span>
+            <span style="--i:9">a</span>
+            <span style="--i:10">k</span>
+            <span style="--i:11">i</span>
+            <span style="--i:12">s</span>
+        </h1>
+        <div class="fadeInIndex">
+            <h3 class="text-center">Web Developer in pursuit of lifelong learning</h3>
+        </div>
+
+        <div class="accordion index-accordion my-5" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item bg-transparent border border-0">
+                <h2 class="accordion-header bg-transparent" id="panelsStayOpen-headingOne">
+                    <button class="accordion-button bg-transparent accordion-font1" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                        Why I chose web development...
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse bg-transparent collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                    <div class="accordion-body bg-transparent accordion-font">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum distinctio eaque similique dolor laboriosam esse atque, vero blanditiis aliquam minus maiores dicta, labore sint! Quam doloremque repellendus ex quis perferendis.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item bg-transparent border border-0">
+                <h2 class="accordion-header bg-transparent" id="panelsStayOpen-headingTwo">
+                <button class="accordion-button bg-transparent collapsed accordion-font1" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                    5 years...
+                </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse bg-transparent collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                <div class="accordion-body accordion-font">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis vel quidem itaque similique fuga vero, inventore quia, quod amet ratione tempora nisi assumenda? Aliquid praesentium blanditiis dolores? Culpa, incidunt nostrum.
+                </div>
+                </div>
+            </div>
+            <div class="accordion-item bg-transparent border border-0">
+                <h2 class="accordion-header bg-transparent" id="panelsStayOpen-headingThree">
+                <button class="accordion-button bg-transparent collapsed accordion-font1" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                    Contact
+                </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse bg-transparent collapse" aria-labelledby="panelsStayOpen-headingThree">
+                    <!-- #TODO: Create and add backend to read and store form to database as well as send an email to nate@foxr.xyz -->
+                    <div class="accordion-body bg-transparent accordion-font">
+                        <div class="mb-3">
+                            <label for="FormControlInput1" class="form-label">Email address:</label>
+                            <input type="email" class="form-control" id="FormControlInput1" placeholder="name@example.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="FormControlTextarea1" class="form-label">Message:</label>
+                            <textarea class="form-control" id="FormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button class="btn btn-success cssContactButton" type="submit">
+                                Submit
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
+        <!-- #TODO: Make JavaScript to convert ETH to $$$ then make Solidity Contract to send $10 to contract address with a withdraw to my wallet address.
+        <div class="container text-center">
+            <h5><strong>Buy me a coffee</strong>☕? 😄</h5>
+            <h5>Click the button below to connect Ethereum wallet!</h5>
+            <button class="buy-me-pay my-3 p-2">
+                <strong>Connect and send $5</strong>
+            </button>
+            <button class="buy-me-pay my-3 p-2">
+                <strong>Connect and send $10</strong>
+            </button>
+        </div> -->
+
+
+    <footer>
+        <div class="container text-center my-3 py-2">
+            <div class="footer-nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link text-light fs-4 px-3 text-decoration-underline hoverh changelink-i1" href="./">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light fs-4 px-3 text-decoration-underline hovera changelink-a1" href="./content/about">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light fs-4 px-3 text-decoration-underline hoverm changelink-m1" href="./content/myCode">My Code</a>                       
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light fs-4 px-3 text-decoration-underline hoverr changelink-r1" href="./content/resume">Resume</a>                   
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>

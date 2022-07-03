@@ -2,16 +2,133 @@
 
 body {
     font-family: 'Montserrat', sans-serif !important;
-    background: linear-gradient(to right, rgba(48, 207, 208, 0.5), rgba(51, 8, 103, 0.5))
+    background: linear-gradient(to right, rgba(48, 207, 208, 0.5), rgba(51, 8, 103, 0.5));
+    animation: navbarAnimation 2s ease-in;
 }
-
+.hoveri:hover {
+    text-decoration: underline;
+}
+.hovera:hover {
+    text-decoration: underline;
+}
+.hoverm:hover {
+    text-decoration: underline;
+}
+.hoverr:hover {
+    text-decoration: underline;
+}
+footer .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+@media only screen and (max-width:768px) {
+    footer .navbar-nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+#photo-enter {
+    position: relative;
+    animation: flipX 2s ease-out;
+}
+.letter-spin {
+    position: relative;
+}
+.letter-spin span {
+    position: relative;
+    display: inline-block;
+    font-size: 2rem;
+    text-transform: uppercase;
+    animation: flipLetter 2s;
+    animation-delay: calc(.2s * var(--i))
+}
+.index-accordion {
+    position: relative;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    animation: fadeIn 1s;
+    animation-timing-function: ease-in;
+}
+#home div h3 {
+    position: relative;
+    font-size: 1.35rem;
+    margin-top: 20px;
+    animation: fadeIn 1s;
+    animation-timing-function: ease-in;
+}
+.accordion-font {
+    font-size: 1rem;
+    color: black !important;
+}
+.accordion-font1 {
+    font-size: 1.5rem;
+    color: black !important;
+}
 #about-flipInX {
     font-size: 4rem;
     margin-top: 20px;
     position: relative;
     animation: flipX 2s 1;
 }
-
+.css-abouttxt-1 {
+    position: relative;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    animation: fadeIn 1s;
+    animation-timing-function: ease-in;
+}
+.css-abouttxt-2 {
+    position: relative;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    animation: fadeIn 2s;
+    animation-timing-function: ease-in;
+}
+.css-abouttxt-3 {
+    position: relative;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    animation: fadeIn 3s;
+    animation-timing-function: ease-in;
+}
+.about-me {
+    position: relative;
+    margin-top: 20px;
+    animation: slideLeft 3s;
+    animation-timing-function: cubic-bezier(.51,.92,.24,1.15);
+}
+.educate {
+    position: relative;
+    margin-top: 20px;
+    animation: slideLeft 4s;
+    animation-timing-function: cubic-bezier(.51,.92,.24,1.15);
+}
+.looking-ahead {
+    position: relative;
+    margin-top: 20px;
+    animation: slideLeft 5s;
+    animation-timing-function: cubic-bezier(.51,.92,.24,1.15);
+}
+@keyframes slideLeft {
+    from {
+        opacity: 0;
+        left: 150%;
+    }
+    to{
+        opacity: 1;
+        left: 0%;
+    }
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
 @keyframes flipX {
     from {
         opacity: 0;
@@ -23,44 +140,17 @@ body {
     }
 
 }
-
-#aboutMeDetails p {
-    position: relative;
-    font-size: 1.5rem;
-    margin-top: 20px;
-    animation: fadeIn 1s;
-    animation-timing-function: ease-in;
-}
-
-#aboutMeDetails h2 {
-    position: relative;
-    margin-top: 20px;
-    animation-timing-function: cubic-bezier(.51,.92,.24,1.15);
-}
-
-.about-me {
-    animation: slideLeft 3s;
-}
-
-.education {
-    animation: slideLeft 4s;
-}
-
-.looking-ahead {
-    animation: slideLeft 5s;
-}
-
-
-
-@keyframes slideLeft {
+@keyframes navbarAnimation {
     from {
-        opacity: 0;
-        left: 150%;
+        background-color: rgba(6, 46, 46, 0.815);
     }
-    to{
-        opacity: 1;
-        left: 0%;
+    to {
+        background-color: transparent;
     }
 }
-
-
+@keyframes flipLetter {
+    0%, 80% {
+        transform: rotateY(360deg)
+    }
+}
+@ke
