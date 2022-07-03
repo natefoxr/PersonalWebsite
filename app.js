@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    const development = true
+    const development = false
     if(development == true) {
         // local server
         $('.changelink-i1').replaceWith('<a class="nav-link text-light fs-4 px-3 hoveri changelink-i1" href="./index.html">Home</a>')
