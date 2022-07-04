@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    const development = false
+    const development = true
     if(development == true) {
         // local server
         $('.changelink-i1').replaceWith('<a class="nav-link text-light fs-4 px-3 hoveri changelink-i1" href="./index.html">Home</a>')
@@ -24,10 +24,10 @@ $(document).ready(function() {
             if(element['fork'] == false){
                 $('.project-cards').append(
                     `<div class="col-md-6 col-xl-4">
-                        <div class="card mx-md-4 my-2">
-                            <div class="card-body">
-                                <h5 class="card-title">${element['name']}</h5>
-                                <p class="card-text">${description}</p>
+                        <div class="card mx-md-4 my-2 bg-transparent">
+                            <div class="card-body bg-transparent">
+                                <h5 class="card-title text-capitalize fw-bold">${element['name']}</h5>
+                                <p class="card-text">${description.substring(0,51)}...</p>
                                 <p class="card-text">Created at ${element['created_at'].substring(0,10)}</p>
                                 <p class="card-text">Last update ${element['updated_at'].substring(0,10)}</p>
                                 <p class="card-text">Last push ${element['pushed_at'].substring(0,10)}</p>
