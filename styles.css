@@ -159,6 +159,15 @@ footer .navbar-nav {
     top: 0;
     border-radius: 10px;
 }
+.project-title {
+    animation: slideDown 2s;
+}
+.project-cards {
+    animation: fadeInDelay 2s;
+}
+.resume-body {
+    animation: fadeIn 2s;
+}
 @keyframes slideLeft {
     from {
         opacity: 0;
@@ -169,11 +178,35 @@ footer .navbar-nav {
         left: 0%;
     }
 }
+@keyframes slideDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    50% {
+        transform: translateY(8%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
 @keyframes fadeIn {
     from {
         opacity: 0;
     }
     to{
+        opacity: 1;
+    }
+}
+@keyframes fadeInDelay {
+    0% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 0;
+    }
+    100%{
         opacity: 1;
     }
 }
