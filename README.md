@@ -5,7 +5,7 @@ This Website will contain all of the work and skills that I have to offer as a d
 
 ## Running the project
 
-To run the project visit https://nate.foxr.xyz. This URL will take you to the homepage of this personal website.
+To run the project visit https://foxr.xyz. This URL will take you to the homepage of this personal website.
 
 ## How to use the website
 
