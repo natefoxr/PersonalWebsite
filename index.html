@@ -61,7 +61,6 @@
                 </h2>
                 <div id="panelsStayOpen-collapseOne" class="accordion-collapse bg-transparent collapse show" aria-labelledby="panelsStayOpen-headingOne">
                     <div class="accordion-body bg-transparent accordion-font">
-                        <!-- #TODO: Add in Why I chose web development -->
                         I chose web development because I recognized that through it, I am able to build products and applications that could greatly improve the life of individuals as well as continue my education in the area of computer science. I have always had a passion for technology and computers and have dedicated myself to being a lifelong learner. See <a href="./content/about"class="fw-bold text-dark text-decoration-none changelink-a2">about me</a> for my story.
                     </div>
                 </div>
@@ -77,14 +76,14 @@
                     <div class="accordion-body bg-transparent accordion-font">
                         <div class="mb-3">
                             <label for="FormControlInput1" class="form-label">Email address:</label>
-                            <input type="email" class="form-control" id="FormControlInput1" placeholder="name@example.com">
+                            <input type="email" class="form-control emailinput" id="FormControlInput1" placeholder="name@example.com">
                         </div>
                         <div class="mb-3">
                             <label for="FormControlTextarea1" class="form-label">Message:</label>
-                            <textarea class="form-control" id="FormControlTextarea1" rows="3"></textarea>
+                            <textarea class="form-control messageinput" id="FormControlTextarea1" rows="3"></textarea>
                         </div>
                         <div class="text-center">
-                            <button class="glow-on-hover" type="submit">
+                            <button class="glow-on-hover formsubmit" type="submit">
                                 Submit
                             </button>
                         </div>
@@ -101,13 +100,13 @@
                 <div class="accordion-body accordion-font">
                     <!-- #TODO: JavaScript to convert ETH to $$$ then make Solidity Contract to send $5-$10 to contract address with a withdraw to my wallet address. -->
                     <div class="container text-center lead mt-4">
-                        <h5 class="fw-bold"></h5>
-                        <h5>Click the button below to connect Ethereum wallet!</h5>
+                        <h5 class="eth-text"></h5>
+                        <h5 class="fw-bold">Click the button below to connect Ethereum wallet!</h5>
                         <button class="eth-5 bg-transparent glow-on-hover rounded fw-bold my-3 p-2">
-                            $5 in ETH
+                            Connect<!-- #TODO: $5 in ETH -->
                         </button>
                         <button class="eth-10 bg-transparent glow-on-hover rounded fw-bold my-3 p-2">
-                            $10 in ETH
+                            Connect<!-- #TODO: $10 in ETH -->
                         </button>
                     </div>
                 </div>
@@ -154,6 +153,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
-    <script src="app.js"></script>
+    <script src="bundle.js"></script>
 </body>
 </html>

@@ -13,7 +13,7 @@ After accessing the project navigate through the Navbar and read through the dif
 
 ## See source code
 
-To view the source code of any of the projects on the website click on the GitHub icon for the project you would like to view.
+To view the source code of any of the projects on the website click on the button for the project you would like to view.
 This will take you to the GitHub Repository where it lies.
 
 ### Credits

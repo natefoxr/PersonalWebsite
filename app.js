@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    const development = false;
+    const development = true;
     if(development == true) {
         // local server
         $('.changelink-i1').replaceWith('<a class="nav-link text-light fs-4 px-3 hoveri changelink-i1" href="./index.html">Home</a>');
@@ -44,4 +44,42 @@ $(document).ready(function() {
             }
         });
     });
+    $('.formsubmit').on('click', function() {
+        const email = $('.emailinput').val();
+        const message = $('.messageinput').val();
+        $('.emailinput').val("")
+        $('.messageinput').val("")
+        console.log("Your response has been recorded.");
+        console.log("Email: ", email);
+        console.log("Message: ", message);
+    })
+    // #TODO: Make the pay buttons be install metamask on ready if not installed
+    $('.eth-5').on('click', function() {
+        if (typeof window.ethereum !== 'undefined') {
+            var Web3 = require('web3');
+            var web3 = new Web3(Web3.givenProvider || 'ws://some.local-or-remote.node:8546');
+            web3.eth.getAccounts()
+                .then(e => {
+                    let account=e[0]
+                    $('.eth-text').text(`Connected with account ${account.substring(0,4)}...${account.substring(account.length - 4)}`)
+            })
+         }
+        else{
+                console.log('MetaMask not installed!');
+        }
+    })
+    $('.eth-10').on('click', function() {
+        if (typeof window.ethereum !== 'undefined') {
+            var Web3 = require('web3');
+            var web3 = new Web3(Web3.givenProvider || 'ws://some.local-or-remote.node:8546');
+            web3.eth.getAccounts()
+                .then(e => {
+                    let account=e[0]
+                    $('.eth-text').text(`Connected with account ${account.substring(0,4)}...${account.substring(account.length - 4)}`)
+            })
+         }
+        else{
+                console.log('MetaMask not installed!');
+        }
+    })
 });
