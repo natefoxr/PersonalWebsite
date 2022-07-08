@@ -3,20 +3,6 @@ $(document).ready(function() {
         $('.eth-10').replaceWith('<button class="eth-5 rounded fw-bold border border-0 my-3 p-2"><a href="https://metamask.io/download/" target="_blank" class="text-decoration-none text-dark">Install Metamask</a></button>')
         $('.eth-5').replaceWith('<button class="eth-5 rounded fw-bold border border-0 my-3 p-2"><a href="https://metamask.io/download/" target="_blank" class="text-decoration-none text-dark">Install Metamask</a></button>')
     }      
-    const development = false;
-    if(development == true) {
-        // local server
-        $('.changelink-i1').replaceWith('<a class="nav-link text-light fs-4 px-3 hoveri changelink-i1" href="./index.html">Home</a>');
-        $('.changelink-a1').replaceWith('<a class="nav-link text-light fs-4 px-3 hovera changelink-a1" href="./content/about.html">About Me</a>');
-        $('.changelink-m1').replaceWith('<a class="nav-link text-light fs-4 px-3 hoverm changelink-m1" href="./content/myCode.html">My Code</a>');
-        $('.changelink-r1').replaceWith('<a class="nav-link text-light fs-4 px-3 hoverr changelink-r1" href="./content/resume.html">Resume</a>');
-        $('.changelink-i').replaceWith('<a class="nav-link text-light fs-4 px-3 hoveri changelink-i" href="../index.html">Home</a>');
-        $('.changelink-a').replaceWith('<a class="nav-link text-light fs-4 px-3 hovera changelink-a" href="./about.html">About Me</a>');
-        $('.changelink-m').replaceWith('<a class="nav-link text-light fs-4 px-3 hoverm changelink-m" href="./myCode.html">My Code</a>');
-        $('.changelink-r').replaceWith('<a class="nav-link text-light fs-4 px-3 hoverr changelink-r" href="./resume.html">Resume</a>');
-        $('.changelink-a2').replaceWith('<a href="./content/about.html"class="fw-bold text-dark text-decoration-none changelink-a2">about me</a>');
-
-    }
     $.get('https://api.github.com/users/natefoxr/repos', function(data) {
         data.forEach(element => {
             let description = element['description'];
