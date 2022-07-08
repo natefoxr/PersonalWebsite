@@ -3,7 +3,7 @@ $(document).ready(function() {
         $('.eth-10').replaceWith('<button class="eth-5 rounded fw-bold border border-0 my-3 p-2"><a href="https://metamask.io/download/" target="_blank" class="text-decoration-none text-dark">Install Metamask</a></button>')
         $('.eth-5').replaceWith('<button class="eth-5 rounded fw-bold border border-0 my-3 p-2"><a href="https://metamask.io/download/" target="_blank" class="text-decoration-none text-dark">Install Metamask</a></button>')
     }      
-    const development = true;
+    const development = false;
     if(development == true) {
         // local server
         $('.changelink-i1').replaceWith('<a class="nav-link text-light fs-4 px-3 hoveri changelink-i1" href="./index.html">Home</a>');
