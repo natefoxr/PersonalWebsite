@@ -67,13 +67,12 @@ $(document).ready(function() {
             web3.eth.getAccounts()
                 .then(e => {
                     let account=e[0]
-                    // $('.eth-text').text(`Connected with account ${account.substring(0,4)}...${account.substring(account.length - 4)}`)
+                    $('.eth-text').text(`Connected with account ${account.substring(0,4)}...${account.substring(account.length - 4)}`)
             })
          }
         else{
             alert("Please install MetaMask to use this function!");
             console.log('MetaMask not installed!');
         }
-        $('.eth-text').text(`Connected with account ${account.substring(0,4)}...${account.substring(account.length - 4)}`)
     })
 });
