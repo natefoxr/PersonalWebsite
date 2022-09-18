@@ -34,15 +34,15 @@ $(document).ready(function() {
             }
         });
     });
-    $('.formsubmit').on('click', function() {
-        const email = $('.emailinput').val();
-        const message = $('.messageinput').val();
-        $('.emailinput').val("")
-        $('.messageinput').val("")
-        console.log("Your response has been recorded.");
-        console.log("Email: ", email);
-        console.log("Message: ", message);
-    })
+    // $('.formsubmit').on('click', function() {
+    //     const email = $('.emailinput').val();
+    //     const message = $('.messageinput').val();
+    //     $('.emailinput').val("")
+    //     $('.messageinput').val("")
+    //     console.log("Your response has been recorded.");
+    //     console.log("Email: ", email);
+    //     console.log("Message: ", message);
+    // })
     $('.eth-5').on('click', function() {
         if (typeof window.ethereum !== 'undefined') {
             var Web3 = require('web3');

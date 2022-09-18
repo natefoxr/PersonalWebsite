@@ -73,21 +73,25 @@
                 </h2>
                 <div id="panelsStayOpen-collapseThree" class="accordion-collapse bg-transparent collapse" aria-labelledby="panelsStayOpen-headingThree">
                     <!-- #TODO: Create and add backend to read and store form to database as well as send an email to nate@foxr.xyz -->
-                    <div class="accordion-body bg-transparent accordion-font">
-                        <div class="mb-3">
-                            <label for="FormControlInput1" class="form-label">Email address:</label>
-                            <input type="email" class="form-control emailinput" id="FormControlInput1" placeholder="name@example.com">
-                        </div>
-                        <div class="mb-3">
-                            <label for="FormControlTextarea1" class="form-label">Message:</label>
-                            <textarea class="form-control messageinput" id="FormControlTextarea1" rows="3"></textarea>
-                        </div>
+                    <form action="https://formspree.io/f/mbjbgqjp" method="POST" class="accordion-body bg-transparent accordion-font">
+                        <label for="user_name" class="form-label">
+                            Name:
+                            <input type="text" class="form-control emailinput" id="user_name" name="user_name" placeholder="Enter your name">
+                        </label><br>
+                        <label for="user_mail" class="form-label">
+                            Email address:
+                            <input type="email" class="form-control emailinput" id="user_mail" name="user_mail" placeholder="name@example.com">
+                        </label><br>
+                        <label for="user_message" class="form-label">
+                            Message:
+                            <textarea class="form-control messageinput" id="user_message" name="user_message" rows="3"></textarea>
+                        </label><br>
                         <div class="text-center">
                             <button class="glow-on-hover formsubmit" type="submit">
                                 Submit
                             </button>
                         </div>
-                    </div>
+                    </form>
                 </div>
             </div>
             <!-- <div class="accordion-item bg-transparent border border-0">
@@ -153,6 +157,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
-    <script src="bundle.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>

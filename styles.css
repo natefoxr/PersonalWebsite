@@ -168,6 +168,13 @@ footer .navbar-nav {
 .resume-body {
     animation: fadeIn 2s;
 }
+form {
+    display: flex;
+    flex-direction: column;    
+}
+.formsubmit {
+    justify-content: center;
+}
 @keyframes slideLeft {
     from {
         opacity: 0;
